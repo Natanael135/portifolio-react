@@ -9,7 +9,7 @@ export const CardContainer = styled.div`
   transition: ${theme.effects.transition};
   
   &:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: ${theme.effects.hoverShadow};
   }
 `;
