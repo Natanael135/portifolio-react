@@ -1,4 +1,5 @@
 import React from 'react';
+import { ExperienceSection } from '../Experience';
 import {
   SkillsContainer,
   SectionTitle,
@@ -14,6 +15,7 @@ import {
 
 export const Skills = () => {
   return (
+    <>
     <SkillsContainer id="skills">
       <SectionTitle>Skills & Experiência</SectionTitle>
       <SectionSubtitle>
@@ -136,5 +138,7 @@ export const Skills = () => {
         </SkillCard>
       </SkillsGrid>
     </SkillsContainer>
+    <ExperienceSection/>
+    </>
   );
 };

@@ -5,6 +5,7 @@ export const SkillsContainer = styled.section`
   padding: ${theme.spacing.section} 0;
   background: ${theme.colors.background};
   padding: 1rem;
+  margin-bottom: 2rem;
 `;
 
 export const SectionTitle = styled.h2`

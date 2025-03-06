@@ -34,6 +34,7 @@ export const Footer = () => {
           <FooterLinks column>
             <FooterLink href="#hero">Home</FooterLink>
             <FooterLink href="#skills">Habilidades</FooterLink>
+            <FooterLink href="#experience">Experiencia</FooterLink>
             <FooterLink href="#projects">Projetos</FooterLink>
           </FooterLinks>
         </FooterSection>

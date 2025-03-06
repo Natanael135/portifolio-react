@@ -4,7 +4,9 @@ export const Header = () => (
     <Nav>
       <Title>Natanael Melo</Title>
       <NavLinks>
+        <NavLink href="#hero">Home</NavLink>
         <NavLink href="#skills">Habilidades</NavLink>
+        <NavLink href="#experience">Experiencia</NavLink>
         <NavLink href="#projects">Projetos</NavLink>
         <NavLink href="#contact">Contato</NavLink>
         <SocialLinks>
