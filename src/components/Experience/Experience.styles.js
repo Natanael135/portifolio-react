@@ -43,24 +43,20 @@ export const IconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 3.5rem;
-  height: 3.5rem;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
   background: ${theme.colors.primary}15;
-  border-radius: ${theme.effects.borderRadius.medium};
+  border-radius: ${theme.effects.borderRadius.large};
 
-  @media (min-width: 640px) {
+
     width: 4rem;
     height: 4rem;
-  }
+  
 
   i {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: ${theme.colors.primary};
 
-    @media (min-width: 640px) {
-      font-size: 1.75rem;
-    }
   }
 `;
 
