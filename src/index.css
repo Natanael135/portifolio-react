@@ -4,3 +4,33 @@
   font-family: 'Inter', sans-serif;
   text-decoration: none;
 }
+
+/* Preferência por reduzir movimentos */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Scrollbar customizado */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #51c774;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #45ab64;
+}
