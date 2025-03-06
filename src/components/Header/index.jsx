@@ -54,11 +54,12 @@ export const Header = () => {
             <i className='bx bx-x'></i>
           </CloseButton>
           
-          <NavLink href="#hero" onClick={closeMenu}>Home</NavLink>
-          <NavLink href="#skills" onClick={closeMenu}>Habilidades</NavLink>
-          <NavLink href="#experience" onClick={closeMenu}>Experiencia</NavLink>
-          <NavLink href="#projects" onClick={closeMenu}>Projetos</NavLink>
-          <NavLink href="#contact" onClick={closeMenu}>Contato</NavLink>
+          <NavLink href="#hero" onClick={closeMenu}><i class='bx bx-home'></i>Home</NavLink>
+          <NavLink href="#skills" onClick={closeMenu}> <i className='bx bx-code-alt'></i>Habilidades</NavLink>
+          <NavLink href="#experience" onClick={closeMenu}> <i className="bx bx-briefcase"></i>Experiencia</NavLink>
+          <NavLink href="#projects" onClick={closeMenu}><i class="bx bx-folder"></i>Projetos</NavLink>
+          <NavLink href="#contact" onClick={closeMenu}><i class="bx bx-phone"></i>
+          Contato</NavLink>
           
           <SocialLinks>
             <SocialLink href="https://github.com/Natanael135" target="_blank">

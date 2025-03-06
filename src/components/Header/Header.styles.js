@@ -53,6 +53,9 @@ export const NavLink = styled.a`
   text-decoration: none;
   font-weight: 500;
   transition: ${theme.effects.transition};
+  display: flex;
+  align-items: center;
+  gap: 1rem;
   
   &:hover {
     color: ${theme.colors.primary};
