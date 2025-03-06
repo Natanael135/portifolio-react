@@ -28,7 +28,16 @@ export const ExperienceSection = () => {
             <ExperienceTitle>Desenvolvedor Front-end Júnior</ExperienceTitle>
             <ExperienceCompanyName>Forja</ExperienceCompanyName>
             <ExperienceDate>Fev/2024 - Presente</ExperienceDate>
-            <ExperienceDescription>Em Breve</ExperienceDescription>
+            <ExperienceDescription>Em Breve...</ExperienceDescription>
+          </TimelineItem>
+
+          <TimelineItem>
+            <ExperienceTitle>Desenvolvedor Front-end Voluntário</ExperienceTitle>
+            <ExperienceCompanyName>ONG Recomeçando</ExperienceCompanyName>
+            <ExperienceDate>Jan/2024 - Presente</ExperienceDate>
+            <ExperienceDescription>
+             Em Breve...
+            </ExperienceDescription>
           </TimelineItem>
 
           <TimelineItem>
@@ -55,18 +64,7 @@ export const ExperienceSection = () => {
             </ExperienceDescription>
           </TimelineItem>
 
-          <TimelineItem>
-            <ExperienceTitle>Projetos Pessoais</ExperienceTitle>
-            {/*<ExperienceCompanyName>Pessoal</ExperienceCompanyName>*/}
-            <ExperienceDate>2023 - Presente</ExperienceDate>
-            <ExperienceDescription>
-              Desenvolvimento de projetos próprios, buscando aprimorar
-              habilidades técnicas e construir um portfólio diversificado.
-              Através desses projetos, explorando novas tecnologias, práticas de
-              desenvolvimento e design, com o objetivo de expandir a experiência
-              profissional e atuação no mercado.
-            </ExperienceDescription>
-          </TimelineItem>
+
         </Timeline>
       </ExperienceCard>
     </ExperienceContainer>
