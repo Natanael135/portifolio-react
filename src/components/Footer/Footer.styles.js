@@ -52,9 +52,11 @@ export const FooterLink = styled.a`
   align-items: center;
   transition: ${theme.effects.transition};
   padding: 0.25rem 0;
+  gap: 0.5rem;
 
   &:hover {
     color: ${theme.colors.primary};
+    
     transform: translateX(4px);
   }
 
