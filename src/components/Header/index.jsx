@@ -1,23 +1,75 @@
-import {StyledHeader, Nav, Title, NavLinks, NavLink, SocialLinks, SocialLink} from './Header.styles';
-export const Header = () => (
-  <StyledHeader>
-    <Nav>
-      <Title>Natanael Melo</Title>
-      <NavLinks>
-        <NavLink href="#hero">Home</NavLink>
-        <NavLink href="#skills">Habilidades</NavLink>
-        <NavLink href="#experience">Experiencia</NavLink>
-        <NavLink href="#projects">Projetos</NavLink>
-        <NavLink href="#contact">Contato</NavLink>
-        <SocialLinks>
-          <SocialLink href="https://github.com/Natanael135" target="_blank">
-            <i className='bx bxl-github text-3xl'></i>
-          </SocialLink>
-          <SocialLink href="https://linkedin.com/in/natanaelsmelo/" target="_blank">
-            <i className='bx bxl-linkedin text-3xl'></i>
-          </SocialLink>
-        </SocialLinks>
-      </NavLinks>
-    </Nav>
-  </StyledHeader>
-);
+import { useState } from 'react';
+import {
+  StyledHeader,
+  Nav,
+  Title,
+  NavLinks,
+  NavLink,
+  SocialLinks,
+  SocialLink,
+  MenuButton,
+  MobileMenu,
+  CloseButton,
+  Overlay
+} from './Header.styles';
+
+
+export const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const closeMenu = () => setIsMenuOpen(false);
+
+  return (
+    <StyledHeader>
+      <Nav>
+        <Title>Natanael Melo</Title>
+
+        {/* Menu para desktop */}
+        <NavLinks>
+          <NavLink href="#hero">Home</NavLink>
+          <NavLink href="#skills">Habilidades</NavLink>
+          <NavLink href="#experience">Experiencia</NavLink>
+          <NavLink href="#projects">Projetos</NavLink>
+          <NavLink href="#contact">Contato</NavLink>
+          <SocialLinks>
+            <SocialLink href="https://github.com/Natanael135" target="_blank">
+              <i className='bx bxl-github text-3xl'></i>
+            </SocialLink>
+            <SocialLink href="https://linkedin.com/in/natanaelsmelo/" target="_blank">
+              <i className='bx bxl-linkedin text-3xl'></i>
+            </SocialLink>
+          </SocialLinks>
+        </NavLinks>
+
+        {/* Botão do menu mobile */}
+        <MenuButton onClick={toggleMenu} aria-label="Abrir menu">
+          <i className='bx bx-menu'></i>
+        </MenuButton>
+
+        {/* Overlay e menu mobile */}
+        <Overlay $isOpen={isMenuOpen} onClick={closeMenu} />
+        <MobileMenu $isOpen={isMenuOpen}>
+          <CloseButton onClick={closeMenu} aria-label="Fechar menu">
+            <i className='bx bx-x'></i>
+          </CloseButton>
+          
+          <NavLink href="#hero" onClick={closeMenu}>Home</NavLink>
+          <NavLink href="#skills" onClick={closeMenu}>Habilidades</NavLink>
+          <NavLink href="#experience" onClick={closeMenu}>Experiencia</NavLink>
+          <NavLink href="#projects" onClick={closeMenu}>Projetos</NavLink>
+          <NavLink href="#contact" onClick={closeMenu}>Contato</NavLink>
+          
+          <SocialLinks>
+            <SocialLink href="https://github.com/Natanael135" target="_blank">
+              <i className='bx bxl-github text-3xl'></i>
+            </SocialLink>
+            <SocialLink href="https://linkedin.com/in/natanaelsmelo/" target="_blank">
+              <i className='bx bxl-linkedin text-3xl'></i>
+            </SocialLink>
+          </SocialLinks>
+        </MobileMenu>
+      </Nav>
+    </StyledHeader>
+  );
+};
