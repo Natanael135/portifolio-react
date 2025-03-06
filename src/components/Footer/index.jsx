@@ -11,6 +11,7 @@ import {
 } from './Footer.styles';
 
 export const Footer = () => {
+  const year = new Date().getFullYear(); 
   return (
     <FooterContainer id="contact">
       <FooterContent>
@@ -20,10 +21,10 @@ export const Footer = () => {
             Desenvolvedor Front-end focado em criar experiências web incríveis e intuitivas.
           </FooterText>
           <FooterLinks>
-            <FooterLink href="https://github.com/Natanael135" target="_blank">
+            <FooterLink href="https://github.com/Natanael135" target="_blank" rel="noopener noreferrer">
               <i className='bx bxl-github'></i>
             </FooterLink>
-            <FooterLink href="https://linkedin.com/in/natanaelsmelo" target="_blank">
+            <FooterLink href="https://linkedin.com/in/natanaelsmelo" target="_blank " rel="noopener noreferrer">
               <i className='bx bxl-linkedin'></i>
             </FooterLink>
           </FooterLinks>
@@ -44,15 +45,19 @@ export const Footer = () => {
           <FooterText>
             Vamos trabalhar juntos? Entre em contato!
           </FooterText>
-          <FooterLink href="mailto:natanaelmelo.dev@gmail.com">
-            <i className='bx bx-send mr-2'></i>
-            Enviar mensagem
+          <FooterLink href="https://wa.me/5588996559305" target="_blank" rel="noopener noreferrer">
+          <i class='bx bxl-whatsapp' ></i>
+            WhatsApp
+          </FooterLink>
+          <FooterLink href="mailto:natanaelmelo.dev@gmail.com" target="_blank" rel="noopener noreferrer"> 
+          <i class='bx bx-envelope'></i>
+            Me mande um Email
           </FooterLink>
         </FooterSection>
       </FooterContent>
       
       <CopyText>
-        © 2025 - by Natanael Melo. Made with React.js
+      &copy; {year} - by Natanael Melo. Made with React.js
       </CopyText>
     </FooterContainer>
   );
