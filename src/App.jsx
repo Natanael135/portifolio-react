@@ -1,28 +1,28 @@
-import Header from './components/Header';
-import Footer from './components/Footer';
-import ToDoList from './Pages/ToDoList';
-import styled from 'styled-components';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from './styles/GlobalStyles';
+import { theme } from './styles/theme.js';
+import { Header } from './components/Header';
+import { Hero } from './components/Hero';
+import { Skills } from './components/Skills';
+import { Projects } from './components/Projects';
+import { Footer } from './components/Footer';
+import 'boxicons/css/boxicons.min.css';
 
-const Layout = styled.div`
-  display: flex;
-  flex-direction: column;
-  min-height: 100dvh;
-`;
-
-const MainContent = styled.main`
-  flex: 1;
-`;
-
-const App = () => {
+function App() {
   return (
-    <Layout>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
       <Header />
-      <MainContent>
-        <ToDoList />
-      </MainContent>
+      
+      <main>
+        <Hero />
+        <Skills />
+        <Projects />
+      </main>
+      
       <Footer />
-    </Layout>
+    </ThemeProvider>
   );
-};
+}
 
 export default App;
