@@ -54,6 +54,7 @@ export const FooterLink = styled.a`
   padding: 0.25rem 0;
   gap: 0.5rem;
 
+
   &:hover {
     color: ${theme.colors.primary};
     
@@ -68,20 +69,12 @@ export const FooterLink = styled.a`
 
 export const CopyText = styled.div`
   text-align: center;
-  margin-top: 4rem;
   color: ${theme.colors.lightText};
   font-size: 0.875rem;
 
   span {
     color: ${theme.colors.primary};
     
-    &:first-child {
-      color: #ef4444; // Cor do coração
-    }
-    
-    &:last-child {
-      font-family: monospace;
-    }
   }
 `;
 
