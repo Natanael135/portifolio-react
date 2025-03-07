@@ -23,12 +23,12 @@ export const Header = () => {
 
     const animationSequence = [
       '</>', 
-      1000, 
-      '<', // Apaga tudo (substitui a função de apagar caracteres)
+      2000, 
+      '<',
       '<Natanael Melo/>', 
-      3000, 
+      4000, 
       '</>', 
-      1000
+      2000
     ];
   
   return (
@@ -37,7 +37,7 @@ export const Header = () => {
         <Title>
           <TypeAnimation
             sequence={animationSequence}
-            speed={40}
+            speed={10}
             repeat={Infinity}
             style={{ display: 'inline-block' }}
           />
