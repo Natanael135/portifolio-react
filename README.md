@@ -1,6 +1,10 @@
-# React + Vite
+# 🚀 Meu Portfólio
 
+Bem-vindo! Sou Natanael Melo, desenvolvedor Front-End focado em criar aplicações web modernas, interativas e eficientes.
+
+---
 ## 🎨 Estilização
+
 A aplicação utiliza uma paleta de cores suaves e harmoniosas:
 - **Cor principal:** `#2E86AB` (azul petróleo vibrante)
 - **Cor secundária:** `#1B5299` (azul royal mais profundo)
@@ -12,6 +16,7 @@ A aplicação utiliza uma paleta de cores suaves e harmoniosas:
 ---
 
 ## 📱 Responsividade
+
 O layout se adapta a diferentes tamanhos de tela:
 - ➿ Header e Footer com disposição flexível
 - 📋 Layout ajustável independente do tamanho da tela
@@ -29,7 +34,7 @@ O layout se adapta a diferentes tamanhos de tela:
 
 1. **Clone o repositório**
    ```bash
-   Git clone https://github.com/Natanael135/
+   Git clone https://github.com/Natanael135/portifolio-react
    ```
 2. **Instale as dependências**
    ```bash
