@@ -1,12 +1,48 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🎨 Estilização
+A aplicação utiliza uma paleta de cores suaves e harmoniosas:
+- **Cor principal:** `` ()
+- **Cor secundária:** `` ()
+- **Fundo:** `#fffff` (branco)
+- **Texto:** `#` ()
 
-Currently, two official plugins are available:
+*Os componentes são estilizados com `styled-components` seguindo um design system consistente.*
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📱 Responsividade
+O layout se adapta a diferentes tamanhos de tela:
+- ➿ Header e Footer com disposição flexível
+- 📋 Layout ajustável independente do tamanho da tela
+- 📲 Botões com tamanho otimizado para mobile
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## 🛠️ Tecnologias Utilizadas
+
+- React
+- Styled Components
+- Vite
+- React Type Animation
+
+## 🚀 Como Executar
+
+1. **Clone o repositório**
+   ```bash
+   Git clone https://github.com/Natanael135/
+   ```
+2. **Instale as dependências**
+   ```bash
+   npm install
+   ```
+3. **Execute o servidor de desenvolvimento**
+   ```bash
+   npm run dev
+   ```
+4. **Acesse no navegador**
+   ```bash
+   http://localhost:5173
+   ```
+
+## 📄 Licença
+Este projeto está licenciado sob a **Licença MIT** 
