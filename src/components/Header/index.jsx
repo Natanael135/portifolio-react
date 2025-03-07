@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import {
   StyledHeader,
   Nav,
@@ -20,10 +21,27 @@ export const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
+    const animationSequence = [
+      '</>', 
+      1000, 
+      '<', // Apaga tudo (substitui a função de apagar caracteres)
+      '<Natanael Melo/>', 
+      3000, 
+      '</>', 
+      1000
+    ];
+  
   return (
     <StyledHeader>
       <Nav>
-        <Title>Natanael Melo</Title>
+        <Title>
+          <TypeAnimation
+            sequence={animationSequence}
+            speed={40}
+            repeat={Infinity}
+            style={{ display: 'inline-block' }}
+          />
+      </Title>
 
         {/* Menu para desktop */}
         <NavLinks>
