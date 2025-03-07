@@ -2,10 +2,10 @@
 
 ## 🎨 Estilização
 A aplicação utiliza uma paleta de cores suaves e harmoniosas:
-- **Cor principal:** `` ()
-- **Cor secundária:** `` ()
+- **Cor principal:** `#2E86AB` (azul petróleo vibrante)
+- **Cor secundária:** `#1B5299` (azul royal mais profundo)
 - **Fundo:** `#fffff` (branco)
-- **Texto:** `#` ()
+- **Texto:** `#333333` (cinza escuro)
 
 *Os componentes são estilizados com `styled-components` seguindo um design system consistente.*
 
