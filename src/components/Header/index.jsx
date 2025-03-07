@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { TypeAnimation } from 'react-type-animation';
+import { useState } from "react";
+import { TypeAnimation } from "react-type-animation";
 import {
   StyledHeader,
   Nav,
@@ -11,9 +11,8 @@ import {
   MenuButton,
   MobileMenu,
   CloseButton,
-  Overlay
-} from './Header.styles';
-
+  Overlay,
+} from "./Header.styles";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,16 +20,16 @@ export const Header = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
 
-    const animationSequence = [
-      '</>', 
-      2000, 
-      '<',
-      '<Natanael Melo/>', 
-      4000, 
-      '</>', 
-      2000
-    ];
-  
+  const animationSequence = [
+    "</>",
+    2000,
+    "<",
+    "<Natanael Melo/>",
+    4000,
+    "</>",
+    2000,
+  ];
+
   return (
     <StyledHeader>
       <Nav>
@@ -39,9 +38,9 @@ export const Header = () => {
             sequence={animationSequence}
             speed={10}
             repeat={Infinity}
-            style={{ display: 'inline-block' }}
+            style={{ display: "inline-block" }}
           />
-      </Title>
+        </Title>
 
         {/* Menu para desktop */}
         <NavLinks>
@@ -52,39 +51,57 @@ export const Header = () => {
           <NavLink href="#contact">Contato</NavLink>
           <SocialLinks>
             <SocialLink href="https://github.com/Natanael135" target="_blank">
-              <i className='bx bxl-github text-3xl'></i>
+              <i className="bx bxl-github text-3xl"></i>
             </SocialLink>
-            <SocialLink href="https://linkedin.com/in/natanaelsmelo/" target="_blank">
-              <i className='bx bxl-linkedin text-3xl'></i>
+            <SocialLink
+              href="https://linkedin.com/in/natanaelsmelo/"
+              target="_blank"
+            >
+              <i className="bx bxl-linkedin text-3xl"></i>
             </SocialLink>
           </SocialLinks>
         </NavLinks>
 
         {/* Botão do menu mobile */}
         <MenuButton onClick={toggleMenu} aria-label="Abrir menu">
-          <i className='bx bx-menu'></i>
+          <i className="bx bx-menu"></i>
         </MenuButton>
 
         {/* Overlay e menu mobile */}
         <Overlay $isOpen={isMenuOpen} onClick={closeMenu} />
         <MobileMenu $isOpen={isMenuOpen}>
           <CloseButton onClick={closeMenu} aria-label="Fechar menu">
-            <i className='bx bx-x'></i>
+            <i className="bx bx-x"></i>
           </CloseButton>
-          
-          <NavLink href="#hero" onClick={closeMenu}><i class='bx bx-home'></i>Home</NavLink>
-          <NavLink href="#skills" onClick={closeMenu}> <i className='bx bx-code-alt'></i>Habilidades</NavLink>
-          <NavLink href="#experience" onClick={closeMenu}> <i className="bx bx-briefcase"></i>Experiencia</NavLink>
-          <NavLink href="#projects" onClick={closeMenu}><i class="bx bx-folder"></i>Projetos</NavLink>
-          <NavLink href="#contact" onClick={closeMenu}><i class="bx bx-phone"></i>
-          Contato</NavLink>
-          
+
+          <NavLink href="#hero" onClick={closeMenu}>
+            <i class="bx bx-home"></i>Home
+          </NavLink>
+          <NavLink href="#skills" onClick={closeMenu}>
+            {" "}
+            <i className="bx bx-code-alt"></i>Habilidades
+          </NavLink>
+          <NavLink href="#experience" onClick={closeMenu}>
+            {" "}
+            <i className="bx bx-briefcase"></i>Experiencia
+          </NavLink>
+          <NavLink href="#projects" onClick={closeMenu}>
+            <i class="bx bx-folder"></i>Projetos
+          </NavLink>
+          <NavLink href="#contact" onClick={closeMenu}>
+            <i class="bx bx-phone"></i>
+            Contato
+          </NavLink>
+
           <SocialLinks>
             <SocialLink href="https://github.com/Natanael135" target="_blank">
-              <i className='bx bxl-github text-3xl'></i>
+              <i className="bx bxl-github text-3xl"></i>
             </SocialLink>
-            <SocialLink href="https://linkedin.com/in/natanaelsmelo/" target="_blank">
-              <i className='bx bxl-linkedin text-3xl'></i>
+            <SocialLink
+              href="https://linkedin.com/in/natanaelsmelo/"
+              target="_blank"
+            >
+              <i className="bx bxl-linkedin text-3xl"></i>
             </SocialLink>
           </SocialLinks>
         </MobileMenu>

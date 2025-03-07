@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { theme } from '../../styles/theme';
+import styled from "styled-components";
+import { theme } from "../../styles/theme";
 
 export const CardContainer = styled.div`
   background: white;
@@ -7,7 +7,7 @@ export const CardContainer = styled.div`
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: ${theme.effects.transition};
-  
+
   &:hover {
     transform: translateY(-10px);
     box-shadow: ${theme.effects.hoverShadow};
@@ -37,7 +37,7 @@ export const Overlay = styled.div`
   font-weight: 500;
   opacity: 0;
   transition: opacity 0.3s ease;
-  
+
   ${ImageContainer}:hover & {
     opacity: 1;
   }
@@ -89,7 +89,7 @@ export const DemoButton = styled.a`
   border-radius: 0.5rem;
   align-content: center;
   transition: ${theme.effects.transition};
-  
+
   &:hover {
     background: ${theme.colors.secondary};
   }
@@ -104,7 +104,7 @@ export const CodeButton = styled.a`
   align-items: center;
   justify-content: center;
   transition: ${theme.effects.transition};
-  
+
   &:hover {
     background: ${theme.colors.primary};
     color: white;
