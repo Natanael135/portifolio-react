@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { theme } from '../../styles/theme';
 
 export const SkillsContainer = styled.section`
-  padding: ${theme.spacing.section} 0;
   background: ${theme.colors.background};
   margin-bottom: 2rem;
 `;
