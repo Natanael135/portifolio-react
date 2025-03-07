@@ -142,7 +142,7 @@ export const ExperienceDate = styled.p`
   }
 `;
 
-export const ExperienceDescription = styled.p`
+export const ExperienceDescription = styled.div`
   font-size: 0.9375rem;
   color: ${theme.colors.lightText};
   line-height: 1.6;
