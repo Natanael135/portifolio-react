@@ -20,7 +20,7 @@ export const Nav = styled.nav`
   position: relative;
   flex-direction: row-reverse;
 
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     flex-direction: row;
     margin: 0 auto;
   }
@@ -42,7 +42,7 @@ export const NavLinks = styled.div`
   gap: 2rem;
   align-items: center;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     display: none;
     
   }
@@ -92,7 +92,7 @@ export const MenuButton = styled.button`
   font-size: 1.5rem;
   padding: 0.5rem;
 
-  @media (max-width: 767px) {
+  @media (max-width: 768px) {
     display: block;
   }
 `;
