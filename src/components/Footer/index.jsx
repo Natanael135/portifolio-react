@@ -51,7 +51,7 @@ export const Footer = () => {
           </FooterLink>
           <FooterLink href="mailto:natanaelmelo.dev@gmail.com" target="_blank" rel="noopener noreferrer"> 
           <i class='bx bx-envelope'></i>
-            Me mande um Email
+            Email
           </FooterLink>
         </FooterSection>
       </FooterContent>

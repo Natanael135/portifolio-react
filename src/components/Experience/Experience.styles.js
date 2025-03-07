@@ -1,17 +1,18 @@
 import styled from 'styled-components';
 import { theme } from '../../styles/theme';
 
-export const ExperienceContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+export const ExperienceContainer = styled.section`
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 2rem;
-  width: 80%;
-  justify-self: center;
-  
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
 
-  @media (min-width: 640px) {
-    gap: 2.5rem;
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
 `;
 
 export const ExperienceCard = styled.div`

@@ -13,14 +13,15 @@ import {
 } from "./Experience.styles";
 
 export const ExperienceSection = () => {
-  return (
+  return (<>
+
     <ExperienceContainer id="experience">
       <ExperienceCard>
         <CardHeader>
           <IconContainer>
             <i className="bx bx-briefcase"></i>
           </IconContainer>
-          <CardTitle>Experiência</CardTitle>
+          <CardTitle>Experiências</CardTitle>
         </CardHeader>
 
         <Timeline>
@@ -64,10 +65,55 @@ export const ExperienceSection = () => {
               </ul>
             </ExperienceDescription>
           </TimelineItem>
-
-
         </Timeline>
       </ExperienceCard>
-    </ExperienceContainer>
+   
+
+    
+      <ExperienceCard>
+        <CardHeader>
+          <IconContainer>
+          <i class='bx bxs-graduation'></i>
+          </IconContainer>
+          <CardTitle>Educação</CardTitle>
+        </CardHeader>
+        <Timeline>
+          <TimelineItem>
+            <ExperienceTitle>Engenharia da Computação</ExperienceTitle>
+            <ExperienceCompanyName>Universidade Federal Do Ceará</ExperienceCompanyName>
+            <ExperienceDate>Ago/2021 - Presente</ExperienceDate>
+            <ExperienceDescription><p>Em Breve...</p></ExperienceDescription>
+          
+          </TimelineItem>
+            <TimelineItem>
+            <ExperienceTitle>Desenvolvimento Full Stack</ExperienceTitle>
+            <ExperienceCompanyName>Capacita Brasil | UECE | Instituto Atlântico</ExperienceCompanyName>
+            <ExperienceDate>Jul/2024 - Atualmente</ExperienceDate>
+            <ExperienceDescription><p>Tecnologias Ultilizadas:</p>
+              
+                <p> HTML, CSS, Git, JavaScript, React.js, SQL, Node.js, bancos de dados, e testes em APIs.</p>
+              
+              
+            </ExperienceDescription>
+            </TimelineItem>
+
+            
+            <TimelineItem>
+            <ExperienceTitle>Desenvolvimento Full Stack</ExperienceTitle>
+            <ExperienceCompanyName>Geração Tech | Digital College | ADECE</ExperienceCompanyName>
+            <ExperienceDate>Out/2024 - Jan/2025</ExperienceDate>
+            <ExperienceDescription><p>Tecnologias Ultilizadas:</p>
+              
+              <p> HTML, CSS, Git, GitHub, JavaScript, React, Node.JS, Express.JS, bancos de dados, e testes automatizados com Cypress.</p>
+            
+            
+          </ExperienceDescription>
+            </TimelineItem>
+
+            </Timeline>
+        </ExperienceCard>
+        </ExperienceContainer>
+
+    </>
   );
 };
