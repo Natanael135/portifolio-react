@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { theme } from '../../styles/theme';
+import styled from "styled-components";
+import { theme } from "../../styles/theme";
 
 export const FooterContainer = styled.footer`
   background: ${theme.colors.background};
@@ -40,9 +40,9 @@ export const FooterText = styled.p`
 
 export const FooterLinks = styled.div`
   display: flex;
-  flex-direction: ${({ column }) => (column ? 'column' : 'row')};
-  gap: ${({ column }) => (column ? '0.5rem' : '1rem')};
-  align-items: ${({ column }) => (column ? 'flex-start' : 'center')};
+  flex-direction: ${({ column }) => (column ? "column" : "row")};
+  gap: ${({ column }) => (column ? "0.5rem" : "1rem")};
+  align-items: ${({ column }) => (column ? "flex-start" : "center")};
 `;
 
 export const FooterLink = styled.a`
@@ -54,16 +54,15 @@ export const FooterLink = styled.a`
   padding: 0.25rem 0;
   gap: 0.5rem;
 
-
   &:hover {
     color: ${theme.colors.primary};
-    
+
     transform: translateX(4px);
   }
 
   i {
     font-size: 1.5rem;
-    margin-right: ${({ hasIcon }) => (hasIcon ? '0.5rem' : '0')};
+    margin-right: ${({ hasIcon }) => (hasIcon ? "0.5rem" : "0")};
   }
 `;
 
@@ -74,7 +73,6 @@ export const CopyText = styled.div`
 
   span {
     color: ${theme.colors.primary};
-    
   }
 `;
 
@@ -82,7 +80,7 @@ export const CopyText = styled.div`
 export const EmailButton = styled(FooterLink)`
   color: ${theme.colors.primary};
   font-weight: 500;
-  
+
   &:hover {
     color: ${theme.colors.secondary};
   }

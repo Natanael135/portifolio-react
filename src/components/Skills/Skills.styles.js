@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { theme } from '../../styles/theme';
+import styled from "styled-components";
+import { theme } from "../../styles/theme";
 
 export const SkillsContainer = styled.section`
   background: ${theme.colors.background};
@@ -79,7 +79,6 @@ export const SkillList = styled.ul`
   list-style: none;
   display: grid;
   gap: 1rem;
-  
 `;
 
 export const SkillItem = styled.li`
@@ -90,7 +89,6 @@ export const SkillItem = styled.li`
   background: ${theme.colors.background};
   border-radius: 0.75rem;
   transition: ${theme.effects.transition};
-  
 
   &:hover {
     background: ${theme.colors.primary}50;

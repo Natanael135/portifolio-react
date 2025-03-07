@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { theme } from '../../styles/theme';
+import styled from "styled-components";
+import { theme } from "../../styles/theme";
 
 export const HeroContainer = styled.section`
   padding: ${theme.spacing.section} 0;
@@ -57,10 +57,9 @@ export const SkillTag = styled.span`
   border-radius: 9999px;
   font-size: 0.875rem;
   color: ${theme.colors.text};
-  i{
+  i {
     color: ${({ theme }) => theme.colors.primary};
   }
- 
 `;
 
 export const ButtonsWrapper = styled.div`
@@ -79,14 +78,17 @@ export const Button = styled.a`
   transition: ${theme.effects.transition};
   gap: 0.5rem;
   font-size: 0.875rem;
-  
-  ${({ primary }) => primary ? `
+
+  ${({ primary }) =>
+    primary
+      ? `
     background: ${theme.colors.primary};
     color: white;
     &:hover {
       background: ${theme.colors.secondary};
     }
-  ` : `
+  `
+      : `
     background: white;
     color: ${theme.colors.primary};
     border: 2px solid ${theme.colors.primary};

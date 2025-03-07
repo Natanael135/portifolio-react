@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { theme } from '../../styles/theme';
+import styled from "styled-components";
+import { theme } from "../../styles/theme";
 
 export const ExperienceContainer = styled.section`
   display: grid;
@@ -12,7 +12,6 @@ export const ExperienceContainer = styled.section`
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
 `;
 
 export const ExperienceCard = styled.div`
@@ -33,11 +32,9 @@ export const ExperienceCard = styled.div`
 `;
 
 export const CardHeader = styled.div`
-
   align-items: center;
   gap: 1rem;
   margin-bottom: 2.5rem;
-
 `;
 
 export const IconContainer = styled.div`
@@ -49,15 +46,12 @@ export const IconContainer = styled.div`
   background: ${theme.colors.primary}15;
   border-radius: ${theme.effects.borderRadius.large};
 
-
-    width: 4rem;
-    height: 4rem;
-  
+  width: 4rem;
+  height: 4rem;
 
   i {
     font-size: 2rem;
     color: ${theme.colors.primary};
-
   }
 `;
 
@@ -65,8 +59,6 @@ export const CardTitle = styled.h3`
   font-size: 1.5rem;
   font-weight: 700;
   color: ${theme.colors.text};
-
-
 `;
 
 export const Timeline = styled.div`
@@ -74,7 +66,7 @@ export const Timeline = styled.div`
   padding-left: 1.5rem;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: 0.25rem;
     top: 0.5rem;
@@ -94,7 +86,7 @@ export const TimelineItem = styled.div`
   padding-left: 2rem;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: -0.5rem;
     top: 0.5rem;
@@ -151,11 +143,11 @@ export const ExperienceDescription = styled.div`
   @media (min-width: 640px) {
     font-size: 1rem;
   }
-  ul{
+  ul {
     padding-left: 0.75rem;
-    
+
     @media (min-width: 640px) {
       padding-left: 1rem;
-  }
+    }
   }
 `;

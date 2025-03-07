@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { theme } from '../../styles/theme';
+import styled from "styled-components";
+import { theme } from "../../styles/theme";
 
 export const ProjectsContainer = styled.section`
   padding: ${theme.spacing.section} 0;
@@ -12,7 +12,7 @@ export const SectionTitle = styled.h2`
   color: ${theme.colors.text};
   text-align: center;
   margin-bottom: 2rem;
-  
+
   span {
     color: ${theme.colors.primary};
   }

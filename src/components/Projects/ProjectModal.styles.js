@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ModalOverlay = styled.div`
   position: fixed;
@@ -29,7 +29,7 @@ export const CloseButton = styled.button`
   font-size: 2rem;
   cursor: pointer;
   transition: color 0.3s ease;
-  
+
   &:hover {
     color: #51c774;
   }

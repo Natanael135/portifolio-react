@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   CardContainer,
   ImageContainer,
@@ -12,7 +12,7 @@ import {
   ButtonsWrapper,
   DemoButton,
   CodeButton,
-} from './ProjectCard.styles';
+} from "./ProjectCard.styles";
 
 export const ProjectCard = ({ project, onClick }) => {
   return (
@@ -30,11 +30,19 @@ export const ProjectCard = ({ project, onClick }) => {
           ))}
         </TagsWrapper>
         <ButtonsWrapper>
-          <DemoButton href={project.demoUrl} target="_blank" rel="noopener noreferrer">
+          <DemoButton
+            href={project.demoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Live Demo
           </DemoButton>
-          <CodeButton href={project.codeUrl} target="_blank" rel="noopener noreferrer">
-            <i className='bx bxl-github'></i>
+          <CodeButton
+            href={project.codeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="bx bxl-github"></i>
           </CodeButton>
         </ButtonsWrapper>
       </CardContent>
