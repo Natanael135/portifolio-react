@@ -28,7 +28,7 @@ export const ExperienceSection = () => {
             <ExperienceTitle>Desenvolvedor Front-end Júnior</ExperienceTitle>
             <ExperienceCompanyName>Forja</ExperienceCompanyName>
             <ExperienceDate>Fev/2024 - Presente</ExperienceDate>
-            <ExperienceDescription>Em Breve...</ExperienceDescription>
+            <ExperienceDescription><p>Em Breve...</p></ExperienceDescription>
           </TimelineItem>
 
           <TimelineItem>
@@ -36,7 +36,8 @@ export const ExperienceSection = () => {
             <ExperienceCompanyName>ONG Recomeçando</ExperienceCompanyName>
             <ExperienceDate>Jan/2024 - Presente</ExperienceDate>
             <ExperienceDescription>
-             Em Breve...
+              <p>Em Breve...</p>
+             
             </ExperienceDescription>
           </TimelineItem>
 
