@@ -24,10 +24,30 @@ const projectsData = [
       "Styled Components",
     ],
     demoUrl: "https://topicmorrinhos.netlify.app/",
-    codeUrl: "",
+    codeUrl: null,
   },
   {
     id: 2,
+    title: "Find Filmes",
+    description:
+      "um projeto de encontrar filmes, permitindo que os usuários pesquisem por filmes. o projeto utiliza a API do TMDB.",
+    image: "/images/findmovieProject.png",
+    tags: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "React.js",
+      "Tailwind CSS",
+      "App Write",
+      "TMDB API",
+      "Vite",
+      "Netlify",
+    ],
+    demoUrl: "https://encontrefilmes.netlify.app/",
+    codeUrl: "https://github.com/Natanael135/project-movies",
+  },
+  {
+    id: 3,
     title: "To-Do List",
     description:
       "Um projeto para gerenciamento de tarefas, permitindo que os usuários organizem, priorizem e acompanhem suas atividades de forma simples e eficiente.",
