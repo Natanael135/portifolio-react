@@ -59,7 +59,7 @@ export const ExperienceSection = () => {
                 Desenvolvedor Fullstack Freelancer
               </ExperienceTitle>
               <ExperienceCompanyName>iFestify</ExperienceCompanyName>
-              <ExperienceDate>Nov/2024 - Dez/2024</ExperienceDate>
+              <ExperienceDate>Nov/2024 - Mar/2025</ExperienceDate>
               <ExperienceDescription>
                 <ul>
                   <li>
