@@ -18,7 +18,7 @@ export const Footer = () => {
         <FooterSection>
           <FooterTitle>Natanael Melo</FooterTitle>
           <FooterText>
-            Desenvolvedor Front-end focado em criar experiências web incríveis e
+            Desenvolvedor Fullstack focado em criar experiências web incríveis e
             intuitivas.
           </FooterText>
           <FooterLinks>

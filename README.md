@@ -1,6 +1,6 @@
 # 🚀 Meu Portfólio
 
-Bem-vindo! Sou Natanael Melo, desenvolvedor Front-End focado em criar aplicações web modernas, interativas e eficientes.
+Bem-vindo! Sou Natanael Melo, desenvolvedor Fullstack focado em criar aplicações web modernas, interativas e eficientes.
 
 ---
 ## 🎨 Estilização

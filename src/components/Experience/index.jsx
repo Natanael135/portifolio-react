@@ -26,7 +26,7 @@ export const ExperienceSection = () => {
 
           <Timeline>
             <TimelineItem>
-              <ExperienceTitle>Desenvolvedor Front-end Júnior</ExperienceTitle>
+              <ExperienceTitle>Desenvolvedor Fullstack Júnior</ExperienceTitle>
               <ExperienceCompanyName>Forja</ExperienceCompanyName>
               <ExperienceDate>Fev/2024 - Presente</ExperienceDate>
               <ExperienceDescription>
@@ -36,7 +36,7 @@ export const ExperienceSection = () => {
 
             <TimelineItem>
               <ExperienceTitle>
-                Desenvolvedor Front-end Voluntário
+                Desenvolvedor Fullstack Voluntário
               </ExperienceTitle>
               <ExperienceCompanyName>ONG Recomeçando</ExperienceCompanyName>
               <ExperienceDate>Jan/2024 - Presente</ExperienceDate>
@@ -47,7 +47,7 @@ export const ExperienceSection = () => {
 
             <TimelineItem>
               <ExperienceTitle>
-                Desenvolvedor Front-end Freelancer
+                Desenvolvedor Fullstack Freelancer
               </ExperienceTitle>
               <ExperienceCompanyName>iFestify</ExperienceCompanyName>
               <ExperienceDate>Nov/2024 - Dez/2024</ExperienceDate>

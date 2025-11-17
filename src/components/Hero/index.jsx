@@ -19,7 +19,7 @@ export const Hero = () => {
         <ProfileImage>
           <Image src="/images/natanael.jpeg" alt="Natanael Melo" />
         </ProfileImage>
-        <Heading>Front-End Developer</Heading>
+        <Heading>Fullstack Developer</Heading>
         <Subtitle>
           Desenvolvedor apaixonado por criar experiências web incríveis e
           intuitivas
